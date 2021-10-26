@@ -1,6 +1,8 @@
 # Legend Linter
 
-This is a demo project to display how we can use `Morphir` and `Bosque` to get theorem proving feedback for `Legend Pure Code`. 
+Demo project to display theorem proving feedback for `Legend Pure Code` powered by `Morphir` and `Bosque` for `Legend Pure Code`. 
+
+## Development setup
 
 ```sh
 # Start the web app in a separate terminal tab
@@ -17,3 +19,19 @@ yarn server:linter
 
 > You need to manually shut down the Bosque server's container using the command
 > `docker rm -f $(docker ps -a -q)`
+> 
+## Roadmap
+
+Roadmap is on its way.
+
+## Contributing
+
+Contributing guide is on its way.
+
+## License
+
+Copyright 2021 Goldman Sachs
+
+Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
