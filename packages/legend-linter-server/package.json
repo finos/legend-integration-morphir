@@ -1,0 +1,14 @@
+{
+  "name": "@finos/legend-linter-server",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Legend Linger server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.17.1"
+  }
+}

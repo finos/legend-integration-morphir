@@ -1,20 +1,19 @@
-<img align="right" width="40%" src="https://www.finos.org/hubfs/FINOS/finos-logo/FINOS_Icon_Wordmark_Name_RGB_horizontal.png">
+# Legend Linter
 
-# FINOS Software Project Blueprint
+This is a demo project to display how we can use `Morphir` and `Bosque` to get theorem proving feedback for `Legend Pure Code`. 
 
-Project blueprint is a GitHub repository template for all [Fintech Open Source Foundation (FINOS)](https://www.finos.org/) hosted GitHub repositories, contributed and maintained by FINOS as part of the [Open Developer Platform (ODP)](https://odp.finos.org) initiative.
+```sh
+# Start the web app in a separate terminal tab
+yarn install
+yarn setup
+yarn start
 
-## How to use this blueprint
+# Start the Bosque server in a separate terminal tab
+yarn server:bosque
 
-Please follow https://odp.finos.org/docs/project-collaboration/#finos-project-blueprint
+# Start the linter server in a separate terminal tab
+yarn server:linter
+```
 
-## Governance
-This blueprint implements https://github.com/finos/community/tree/master/governance#open-source-software-projects
-
-## License
-
-Copyright 2019 Fintech Open Source Foundation
-
-Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
+> You need to manually shut down the Bosque server's container using the command
+> `docker rm -f $(docker ps -a -q)`
