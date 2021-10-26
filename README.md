@@ -17,7 +17,7 @@ yarn server:bosque
 yarn server:linter
 ```
 
-> You need to manually shut down the Bosque server's container using the command
+> You need to manually shut down the Bosque server's container using the command\n
 > `docker rm -f $(docker ps -a -q)`
 > 
 ## Roadmap
