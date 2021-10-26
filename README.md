@@ -1,6 +1,6 @@
 # Legend Linter
 
-Demo project to display theorem proving feedback for `Legend Pure Code` powered by `Morphir` and `Bosque` for `Legend Pure Code`. 
+Demo project to display theorem proving feedback for `Legend Pure Code` powered by `Morphir` and `Bosque`. 
 
 ## Development setup
 
@@ -17,9 +17,9 @@ yarn server:bosque
 yarn server:linter
 ```
 
-> You need to manually shut down the Bosque server's container using the command\n
+> You need to manually shut down the Bosque server's container using the command
 > `docker rm -f $(docker ps -a -q)`
-> 
+
 ## Roadmap
 
 Roadmap is on its way.
