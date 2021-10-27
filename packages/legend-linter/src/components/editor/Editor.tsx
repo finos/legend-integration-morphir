@@ -103,17 +103,28 @@ export const EditorInner = observer(() => {
                 <PanelLoadingIndicator
                   isLoading={editorStore.initState.isInProgress}
                 />
-                <TextInputEditor
-                  inputValue={
-                    JSON.stringify(
-                      JSON.parse(editorStore.morphirIR ?? '{}'),
-                      null,
-                      2,
-                    ) ?? '{}'
+                <div className="panel__header">
+                  {
+                    <div className="panel__header__title">
+                      <div className="panel__header__title__label">
+                        Morphir IR
+                      </div>
+                    </div>
                   }
-                  language={EDITOR_LANGUAGE.JSON}
-                  isReadOnly={true}
-                />
+                </div>
+                <div className="panel__content edit-panel__content edit-panel__content--headless">
+                  <TextInputEditor
+                    inputValue={
+                      JSON.stringify(
+                        JSON.parse(editorStore.morphirIR ?? '{}'),
+                        null,
+                        2,
+                      ) ?? '{}'
+                    }
+                    language={EDITOR_LANGUAGE.JSON}
+                    isReadOnly={true}
+                  />
+                </div>
               </ResizablePanel>
             </ResizablePanelGroup>
           </div>
