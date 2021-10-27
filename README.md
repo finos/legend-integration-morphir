@@ -38,9 +38,9 @@ yarn server:linter
 
 #### From Legend Studio
 
-- Clone Studio's Morphir dev fork branch.
-- Start Studio and Start Linter (see Development Setup).
-- Define a Pure function in Studio.
+- Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
+- Start Studio and Linter (see Development Setup). Also start Legend-Engine and Legend-SDLC with proper GitLab setup.
+- Create a new project and workspace. Under a package, define a Pure function in Studio.
 - Select the function and from right upper corner file generation dropdown, select `Morphir`. This generates the IR and is viewable in file generation viewer.
 - Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
 - Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
