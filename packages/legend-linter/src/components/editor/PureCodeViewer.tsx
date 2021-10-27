@@ -113,6 +113,13 @@ export const PureCodeViewer = observer(() => {
 
   return (
     <div className="panel edit-panel">
+      <div className="panel__header">
+        {
+          <div className="panel__header__title">
+            <div className="panel__header__title__label">Pure Source</div>
+          </div>
+        }
+      </div>
       <div className="panel__content edit-panel__content edit-panel__content--headless">
         <ReactResizeDetector
           handleWidth={true}

@@ -29,6 +29,15 @@ export const BosqueFeedbackViewer = observer(
     if (!feedbackData.output.length) {
       return (
         <div className="feedback-viewer">
+          <div className="panel__header">
+            {
+              <div className="panel__header__title">
+                <div className="panel__header__title__label">
+                  Bosque Feedback
+                </div>
+              </div>
+            }
+          </div>
           <div className="feedback-viewer__message feedback-viewer__message--success">
             No problem found!
           </div>
@@ -40,6 +49,13 @@ export const BosqueFeedbackViewer = observer(
     }
     return (
       <div className="feedback-viewer">
+        <div className="panel__header">
+          {
+            <div className="panel__header__title">
+              <div className="panel__header__title__label">Bosque Feedback</div>
+            </div>
+          }
+        </div>
         <div className="feedback-viewer__message feedback-viewer__message--error">
           Problem(s) found!
         </div>
