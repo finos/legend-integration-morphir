@@ -1,6 +1,12 @@
 .DS_Store
 
-.yarn
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.yarn/constraints.pro
 
 # Docusaurus generated folders
 website/translated_docs/

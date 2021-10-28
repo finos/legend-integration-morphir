@@ -18,7 +18,7 @@ const express = require('express');
 const cors = require('cors');
 
 let actualSrc = '';
-let actualIR = '';
+let actualIR = '{}';
 
 // Constants
 const PORT = 9900;
