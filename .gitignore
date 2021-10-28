@@ -1,5 +1,7 @@
 .DS_Store
 
+.yarn
+
 # Docusaurus generated folders
 website/translated_docs/
 website/build/

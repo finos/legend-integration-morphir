@@ -1,3 +1,6 @@
+[![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://finosfoundation.atlassian.net/wiki/display/FINOS/Incubating)
+![website build](https://github.com/finos/legend-integration-morphir/workflows/Docusaurus-website-build/badge.svg)
+
 # Legend Linter
 
 Demo project to display theorem proving feedback for `Legend Pure Code` powered by `Morphir` and `Bosque`. 
@@ -51,7 +54,7 @@ Roadmap is on its way.
 
 ## Contributing
 
-Contribution guide is on its way.
+To learn about contributing to Legend, see the [CONTRIBUTING.md](CONTRIBUTING.md) file or the ["contribute to Legend"](https://legend.finos.org/docs/getting-started/contribute-to-legend) section of the Legend documentation site.
 
 ## License
 
