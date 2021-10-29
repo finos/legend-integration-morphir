@@ -30,7 +30,7 @@ yarn server:linter
 
 #### The Linter server exposes two endpoints:
 
-- POST to `<linter>:<port>/linter` (ex. `0.0.0.0:9900/linter`) with keys `src` with Pure source code and `ir` with corresponding generated Morphir IR, to post data to the server.
+- POST to `<linter>:<port>/lint` (ex. `0.0.0.0:9900/lint`) with keys `src` with Pure source code and `ir` with corresponding generated Morphir IR, to post data to the server.
 - GET to `<linter>:<port>/data` (ex. `0.0.0.0:9900/data`) to retrieve previously posted Pure source and Morphir IR data.
 
 #### The Bosque server exposes three endpoints:
