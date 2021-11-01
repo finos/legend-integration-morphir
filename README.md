@@ -25,8 +25,8 @@ docker-compose stop
 #### From Legend Studio
 
 - Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
-- [Start Studio](https://legend.finos.org/docs/installation/maven-install-guide) and Linter (see Development Setup).
-- In Studio, create a new project and workspace. Under a package, define a Pure function in Studio.
+- [Start Studio](https://legend.finos.org/docs/installation/maven-install-guide) and Linter (see [Development Setup](https://github.com/finos/legend-integration-morphir/blob/main/README.md#development-setup)).
+- In Studio, create a new project and workspace. Under a package, define a Pure function in Studio ([example](https://github.com/finos/legend-integration-morphir/blob/main/README.md#example-interesting-function)).
 - Select the function and from right upper corner file generation dropdown, select `Morphir`. This generates the IR and is viewable in file generation viewer.
 - Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
 - Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
