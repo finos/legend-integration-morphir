@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  
+  linter-app:
+    container_name: linter-app
+    image: cptteddy/linter-int:linter-app
+    depends_on:
+      - linter-server
+      - morphir-server
+    ports:
+      - 3050:3050
+    networks:
+      - linter
+
+  linter-server:
+    container_name: linter-server
+    image: cptteddy/linter-int:linter-server
+    ports:
+      - 9900:9900
+    networks:
+      - linter
+
+  morphir-server:
+    container_name: morphir-server
+    image: cptteddy/linter-int:morphir-server
+    ports:
+      - 9901:9901
+    networks:
+      - linter
+
+networks:
+  linter: {}
