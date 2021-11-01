@@ -31,6 +31,32 @@ docker-compose stop
 - Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
 - Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
 
+#### Example Interesting Function
+
+Rental Example with Potential Zero Division (Bosque highlights error):
+
+    function demo::rentals(requests: Number[1], available: Number[1], allowPartials: Boolean[1]):Number[1]
+    {
+       let maximumAllowed = if (0.5 < ($requests / $available), | $available / 2.0, | $requests);
+       if($requests <= $maximumAllowed, 
+          |$requests, 
+          |if($allowPartials, 
+              |$maximumAllowed, 
+              |0.0));
+    }
+
+Rental Example Fixed (Bosque reveals no issue):
+
+    function demo::rentals(requests: Number[1], available: Number[1], allowPartials: Boolean[1]):Number[1]
+    {
+       let maximumAllowed = if ($available > 0.0, | if (0.5 < ($requests / $available), | $available / 2.0, | $requests), | 0.0);
+       if($requests <= $maximumAllowed, 
+          |$requests, 
+          |if($allowPartials, 
+              |$maximumAllowed, 
+              |0.0));
+    }
+
 #### Server details inside the box:
 
 > The app consists of a Linter server and a Bosque server. \
