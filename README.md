@@ -8,20 +8,17 @@ Demo project to display theorem proving feedback for `Legend Pure Code` powered 
 ## Development setup
 
 ```sh
-# Start the web app in a separate terminal tab
-yarn install
-yarn setup
-yarn start
+# Go to docker-compose directory
+cd /docker-compose
 
-# Start the Bosque server in a separate terminal tab
-yarn server:bosque
+# Start all containers
+docker-compose up
 
-# Start the linter server in a separate terminal tab
-yarn server:linter
+# To shutdown all containers once done
+docker-compose stop
 ```
 
-> You need to manually shut down the Bosque server's container using the command \
-> `docker rm -f $(docker ps -a -q)`
+> Note: linter-app (the Bosque feedback viewer) webpack can take appx. 2 min to finish compilation.
 
 ## Usage Guide
 
