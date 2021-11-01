@@ -22,6 +22,17 @@ docker-compose stop
 
 ## Usage Guide
 
+#### From Legend Studio
+
+- Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
+- [Start Studio](https://legend.finos.org/docs/installation/maven-install-guide) and Linter (see Development Setup).
+- In Studio, create a new project and workspace. Under a package, define a Pure function in Studio.
+- Select the function and from right upper corner file generation dropdown, select `Morphir`. This generates the IR and is viewable in file generation viewer.
+- Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
+- Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
+
+#### Server details inside the box:
+
 > The app consists of a Linter server and a Bosque server. \
 > The Linter server sits at port 9900 and the Bosque server sits at port 9901 (localhost).
 
@@ -35,15 +46,6 @@ docker-compose stop
 - POST to `<bosque>:<port>/insight` (ex. `0.0.0.0:9901/insight`) with a Morphir IR, to post data to the visualizer. 
 - GET to `<bosque>:<port>/insight` (ex. `0.0.0.0:9901/insight`), or go to the url in a web browser to visualize previously posted Morphir IR data.
 - POST to `<bosque>:<port>/verify` (ex. `0.0.0.0:9901/verify`) with a Morphir IR, to retrieve Bosque feedback for the corresponding Pure source code from which the Morphir IR is generated.
-
-#### From Legend Studio
-
-- Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
-- Start Studio and Linter (see Development Setup). Also start Legend-Engine and Legend-SDLC with proper GitLab setup.
-- Create a new project and workspace. Under a package, define a Pure function in Studio.
-- Select the function and from right upper corner file generation dropdown, select `Morphir`. This generates the IR and is viewable in file generation viewer.
-- Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
-- Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
 
 ## Roadmap
 
