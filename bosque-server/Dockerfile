@@ -31,5 +31,5 @@ RUN \
 # Bundle app source
 COPY . .
 
-EXPOSE 9901
+EXPOSE 8092
 CMD [ "node", "server.js" ]

@@ -3,28 +3,28 @@ services:
   
   linter-app:
     container_name: linter-app
-    image: cptteddy/linter-int:linter-app
+    image: cptteddy/linter-app:0.0.1
     depends_on:
       - linter-server
       - morphir-server
     ports:
-      - 3050:3050
+      - 8090:8090
     networks:
       - linter
 
   linter-server:
     container_name: linter-server
-    image: cptteddy/linter-int:linter-server
+    image: cptteddy/linter-server:0.0.1
     ports:
-      - 9900:9900
+      - 8091:8091
     networks:
       - linter
 
   morphir-server:
     container_name: morphir-server
-    image: cptteddy/linter-int:morphir-server
+    image: cptteddy/morphir-server:0.0.1
     ports:
-      - 9901:9901
+      - 8092:8092
     networks:
       - linter
 

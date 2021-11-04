@@ -4,4 +4,4 @@ cd ./bosque-server
 
 docker build -t bosque .
 
-docker run -p 9901:9901 bosque
+docker run -p 8092:8092 bosque

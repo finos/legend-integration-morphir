@@ -23,7 +23,7 @@ RUN \
 
 COPY . .
 
-EXPOSE 3050
+EXPOSE 8090
 
 CMD ["yarn", "start"]
 

@@ -43,10 +43,10 @@ const setup = (outputDir) => {
         appName: 'ide',
         env: 'local',
         linter: {
-          url: 'http://localhost:9900',
+          url: 'http://localhost:8091',
         },
         bosque: {
-          url: 'http://localhost:9901',
+          url: 'http://localhost:8092',
         },
       },
       undefined,
