@@ -1,65 +1,7 @@
-[![FINOS - Incubating](https://cdn.jsdelivr.net/gh/finos/contrib-toolbox@master/images/badge-incubating.svg)](https://finosfoundation.atlassian.net/wiki/display/FINOS/Incubating)
-![website build](https://github.com/finos/legend-integration-morphir/workflows/Docusaurus-website-build/badge.svg)
+# Legend-Morphir-Bosque Integration Project Demo
 
-# Legend Linter
+Demo videos for 2021 FINOS OSSF NY conference, truncated into three parts. 
 
-Demo project to display theorem proving feedback for `Legend Pure Code` powered by `Morphir` and `Bosque`. 
-
-## Development setup
-
-```sh
-# Start the web app in a separate terminal tab
-yarn install
-yarn setup
-yarn start
-
-# Start the Bosque server in a separate terminal tab
-yarn server:bosque
-
-# Start the linter server in a separate terminal tab
-yarn server:linter
-```
-
-> You need to manually shut down the Bosque server's container using the command \
-> `docker rm -f $(docker ps -a -q)`
-
-## Usage Guide
-
-> The app consists of a Linter server and a Bosque server. \
-> The Linter server sits at port 8091 and the Bosque server sits at port 8092 (localhost).
-
-#### The Linter server exposes two endpoints:
-
-- POST to `<linter>:<port>/lint` (ex. `0.0.0.0:8091/lint`) with keys `src` with Pure source code and `ir` with corresponding generated Morphir IR, to post data to the server.
-- GET to `<linter>:<port>/data` (ex. `0.0.0.0:8091/data`) to retrieve previously posted Pure source and Morphir IR data.
-
-#### The Bosque server exposes three endpoints:
-
-- POST to `<bosque>:<port>/insight` (ex. `0.0.0.0:8092/insight`) with a Morphir IR, to post data to the visualizer. 
-- GET to `<bosque>:<port>/insight` (ex. `0.0.0.0:8092/insight`), or go to the url in a web browser to visualize previously posted Morphir IR data.
-- POST to `<bosque>:<port>/verify` (ex. `0.0.0.0:8092/verify`) with a Morphir IR, to retrieve Bosque feedback for the corresponding Pure source code from which the Morphir IR is generated.
-
-#### From Legend Studio
-
-- Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
-- Start Studio and Linter (see Development Setup). Also start Legend-Engine and Legend-SDLC with proper GitLab setup.
-- Create a new project and workspace. Under a package, define a Pure function in Studio.
-- Select the function and from right upper corner file generation dropdown, select `Morphir`. This generates the IR and is viewable in file generation viewer.
-- Click on button `Visualize Generated IR` to go to the visualizer for the generated IR.
-- Click on button `View Bosque Feedback` to go to the feedback viewer with Pure source code highlighted at tokens with feedback.
-
-## Roadmap
-
-Roadmap is on its way.
-
-## Contributing
-
-To learn about contributing to Legend, see the [CONTRIBUTING.md](CONTRIBUTING.md) file or the ["contribute to Legend"](https://legend.finos.org/docs/getting-started/contribute-to-legend) section of the Legend documentation site.
-
-## License
-
-Copyright 2021 Goldman Sachs
-
-Distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
+- Part 1: Intro & Morphir Type System Metamodel Created in Legend
+- Part 2: Morphir IR generation & Visualizer Demostration
+- Part 3: Bosque Feedback Demonstration
