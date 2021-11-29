@@ -23,7 +23,7 @@ docker-compose stop
 
 #### From Legend Studio
 
-- Clone Studio's [Morphir dev fork branch](https://github.com/CptTeddy/legend-studio/tree/morphir).
+- Clone [Studio](https://github.com/finos/legend-studio). This will be updated once released in short future.
 - [Start Studio](https://legend.finos.org/docs/installation/maven-install-guide) and Linter (see [Development Setup](https://github.com/finos/legend-integration-morphir/blob/main/README.md#development-setup)).
 - In Studio, create a new project and workspace. In a package, define a Pure function ([example](https://github.com/finos/legend-integration-morphir/blob/main/README.md#example-interesting-function)).
 - Select the function and from right upper corner file generation dropdown, select `Morphir`. 
