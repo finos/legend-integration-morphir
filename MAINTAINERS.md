@@ -4,18 +4,18 @@ This file lists the maintainers of this repository.
 
 ## Current maintainers
 
-| GitHub Username | Name | Organization | Email |
-|----------------|------|--------------|-------|
-| @AttilaMihaly | Attila Mihaly | Morgan Stanley | *please add email* |
-| @agitana | Aitana Myohl | Goldman Sachs | *please add email* |
-| @aormerod-gs | Andrew Ormerod | *please add organization* | *please add email* |
-| @appwiz | Rohan Deshpande | @goldmansachs | *please add email* |
-| @aziemchawdhary-gs | Aziem Chawdhary | *please add organization* | *please add email* |
-| @beekemarie | Beeke-Marie Nelke | *please add organization* | *please add email* |
-| @davidharte-gs | *please add name* | *please add organization* | *please add email* |
-| @epsstan | Ephrim Stanley | *please add organization* | *please add email* |
+| GitHub Username | Name | Organization | Email (optional) |
+|----------------|------|--------------|------------------|
+| @AttilaMihaly | Attila Mihaly | Morgan Stanley |  |
+| @agitana | Aitana Myohl | Goldman Sachs |  |
+| @aormerod-gs | Andrew Ormerod | *please add organization* |  |
+| @appwiz | Rohan Deshpande | @goldmansachs |  |
+| @aziemchawdhary-gs | Aziem Chawdhary | *please add organization* |  |
+| @beekemarie | Beeke-Marie Nelke | *please add organization* |  |
+| @davidharte-gs | *please add name* | *please add organization* |  |
+| @epsstan | Ephrim Stanley | *please add organization* |  |
 | @pierredebelen | Pierre De Belen | *please add organization* | pierre.debelen@gmail.com |
-| @stephengoldbaum | Stephen Goldbaum | *please add organization* | *please add email* |
+| @stephengoldbaum | Stephen Goldbaum | *please add organization* |  |
 
 For information about maintainer responsibilities and resources, see the [FINOS Maintainers Cheatsheet](https://community.finos.org/docs/finos-maintainers-cheatsheet).
 
